@@ -9,7 +9,8 @@ RUN apt-get update && \
     make \
     cmake \
     unzip \
-    libcurl4-openssl-dev
+    libtool \
+    libexecinfo-dev \
 
 # Copy function code
 RUN mkdir -p ${FUNCTION_DIR}
